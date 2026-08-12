@@ -13,9 +13,9 @@ if (!defined('ABSPATH')) exit;
 if (file_exists(__DIR__ . '/plugin-update-checker/plugin-update-checker.php')) {
     require_once __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
     $myUpdateChecker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
-        'https://github.com/YOUR_GITHUB_USERNAME/ai-alt-generator/', // Replace with your GitHub Repo URL
+        'https://github.com/imSpires/img-alt-text-gen/',
         __FILE__,
-        'ai-alt-generator'
+        'img-alt-text-gen'
     );
     $myUpdateChecker->setBranch('main');
 }
